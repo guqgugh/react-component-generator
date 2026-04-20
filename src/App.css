@@ -425,6 +425,31 @@
   font-weight: 500;
 }
 
+.view-mode-buttons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.btn-view-mode {
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.btn-view-mode:hover {
+  border-color: #60a5fa;
+  background: rgba(96, 165, 250, 0.05);
+}
+
+.btn-view-mode.active {
+  border-color: #60a5fa;
+  background: rgba(96, 165, 250, 0.15);
+}
+
 /* Preview */
 .preview-content {
   padding: 1.5rem;
@@ -434,10 +459,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150px;
   padding: 2rem;
   background: #f8fafc;
   border-radius: 8px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.preview-mobile {
+  min-height: 600px;
+  width: 375px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.preview-tablet {
+  min-height: 700px;
+  width: 768px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.preview-desktop {
+  min-height: 150px;
+  width: 100%;
 }
 
 .preview-error {
